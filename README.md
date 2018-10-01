@@ -68,6 +68,31 @@ $ Install Apache sudo apt-get install apache2 <br />
 $ Install mod_wsgi sudo apt-get install python-setuptools libapache2-mod-wsgi <br />
 $ Restart Apache sudo service apache2 restart <br />
 
+# Install and configure PostgreSQL
+Install PostgreSQL $ sudo apt-get install postgresql <br />
+
+Check if no remote connections are allowed $ sudo vim /etc/postgresql/9.3/main/pg_hba.conf <br />
+
+Login as user "postgres" $ sudo su - postgres <br />
+
+Get into postgreSQL shell  $ psql <br />
+
+Create a new database named catalog and create a new user named catalog in postgreSQL shell <br />
+
+postgres=# CREATE DATABASE catalog; <br />
+postgres=# CREATE USER catalog; <br />
+Set a password for user catalog <br />
+
+postgres=# ALTER ROLE catalog WITH PASSWORD 'password'; <br />
+Give user "catalog" permission to "catalog" application database <br />
+
+postgres=# GRANT ALL PRIVILEGES ON DATABASE catalog TO catalog; <br />
+Quit postgreSQL postgres=# \q <br />
+
+Exit from user "postgres" <br />
+
+exit <br />
+
 
 
 
