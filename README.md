@@ -104,7 +104,6 @@ Move to the inner FlaskApp directory using $ cd FlaskApp <br />
 Rename application.py to __init__.py using $ sudo mv website.py __init__.py <br />
 Edit database_setup.py, __init__.py and change *engine = create_engine('sqlite:///toyshop.db')* to *engine = create_engine('postgresql://catalog:password@localhost/catalog')* <br />
 Install pip $ sudo apt-get install python-pip <br />
-Use pip to install dependencies $ sudo pip install -r requirements.txt <br />
 Install psycopg2 $ sudo apt-get -qqy install postgresql python-psycopg2 <br />
 Create database schema $ sudo python database_setup.py <br />
 
