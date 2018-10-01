@@ -17,7 +17,7 @@ touch /etc/sudoers.d/grader <br />
 vim /etc/sudoers.d/grader, type in grader ALL=(ALL:ALL) ALL, save and quit <br />
 
 # Set ssh login using keys
-generate keys on local machine using ssh-keygen ; <br />
+generate keys on local machine using $ ssh-keygen <br />
 private key was made by name ~/.ssh/id_rsa <br />
 public key was  ~/.ssh/id_rsa.pub <br />
 
@@ -32,10 +32,10 @@ Copied the public key(*id_rsa.pub*) generated on local machine to this file(auth
 
 $ chmod 700 .ssh <br />
 $ chmod 644 .ssh/authorized_keys <br />
-reload SSH using service ssh restart <br />
+reload SSH using $ service ssh restart <br />
 
 now we can use ssh to login with the new user created <br />
-ssh -i ~/.ssh/id_rsa -p 2200 grader@54.236.95.0 <br />
+$ ssh -i ~/.ssh/id_rsa -p 2200 grader@54.236.95.0 <br />
 
 
 
