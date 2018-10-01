@@ -44,29 +44,29 @@ now we can use ssh to login with the new user created <br />
 $ ssh -i ~/.ssh/id_rsa -p 2200 grader@54.236.95.0 <br />
 
 # Update all installed packages
-$ sudo apt-get update
-$ sudo apt-get upgrade
+$ sudo apt-get update <br />
+$ sudo apt-get upgrade <br />
 
 # Change the SSH port from 22 to 2200
-Use $ sudo vim /etc/ssh/sshd_config and then change Port 22 to Port 2200 , save & quit.
-Reload SSH using $ sudo service ssh restart
+Use $ sudo vim /etc/ssh/sshd_config and then change Port 22 to Port 2200 , save & quit. <br />
+Reload SSH using $ sudo service ssh restart <br />
 
-# Configure the Uncomplicated Firewall (UFW)
-Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123)
+# Configure the Uncomplicated Firewall (UFW) 
+Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123) <br />
 
-$ sudo ufw allow 2200/tcp
-$ sudo ufw allow 80/tcp
-$ sudo ufw allow 123/udp
-$ sudo ufw enable 
+$ sudo ufw allow 2200/tcp <br />
+$ sudo ufw allow 80/tcp <br />
+$ sudo ufw allow 123/udp <br />
+$ sudo ufw enable  <br />
 
 # Configure the local timezone to UTC
-Configure the time zone $ sudo dpkg-reconfigure tzdata
-It is already set to UTC.
+Configure the time zone $ sudo dpkg-reconfigure tzdata <br />
+Choose UTC. <br />
 
 # Install and configure Apache to serve a Python mod_wsgi application
-Install Apache sudo apt-get install apache2
-Install mod_wsgi sudo apt-get install python-setuptools libapache2-mod-wsgi
-Restart Apache sudo service apache2 restart
+$ Install Apache sudo apt-get install apache2 <br />
+$ Install mod_wsgi sudo apt-get install python-setuptools libapache2-mod-wsgi <br />
+$ Restart Apache sudo service apache2 restart <br />
 
 
 
