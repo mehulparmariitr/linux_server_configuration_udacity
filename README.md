@@ -1,12 +1,12 @@
 # linux_server_configuration_udacity
-In this project, a Linux virtual machine needs to be configurated to support the Item Catalog website.
+In this project, a Linux virtual machine needs to be configurated to support the Item Catalog website. <br />
 
-Local IP address : http://54.236.95.0/
-The EC2 URL is : http://ec2-54-236-95-0.compute-1.amazonaws.com/
-SSH port - 2200
-Private key - In Note's to reviewer field
-Public Key - In Note's to reviewer field
-Login with: ssh -i ~/.ssh/id_rsa -p 2200 grader@54.236.95.0
+Local IP address : http://54.236.95.0/ <br />
+The EC2 URL is : http://ec2-54-236-95-0.compute-1.amazonaws.com/ <br />
+SSH port - 2200 <br />
+Private key - In Note's to reviewer field <br />
+Public Key - In Note's to reviewer field <br />
+Login with: ssh -i ~/.ssh/id_rsa -p 2200 grader@54.236.95.0 <br />
 
 # STEPS FOLLOWED
 
