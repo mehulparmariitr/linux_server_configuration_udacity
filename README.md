@@ -132,14 +132,14 @@ Add the following lines of code to the file to configure the virtual host. <br /
 </VirtualHost>
 ```
 
-Enable the virtual host with the following command: sudo a2ensite FlaskApp
+Enable the virtual host with the following command: $ sudo a2ensite FlaskApp
 
 # Create the .wsgi File
-Create the .wsgi File under /var/www/FlaskApp:
+Create the .wsgi File under /var/www/FlaskApp: <br/>
 
-cd /var/www/FlaskApp
-sudo nano flaskapp.wsgi 
-Add the following lines of code to the flaskapp.wsgi file:
+cd /var/www/FlaskApp <br/> 
+sudo nano flaskapp.wsgi <br/>
+Add the following lines of code to the flaskapp.wsgi file: <br/>
 ```
 #!/usr/bin/python
 import sys
@@ -152,7 +152,7 @@ application.secret_key = 'Add your secret key'
 ```
 
 # Restart Apache
-Restart Apache sudo service apache2 restart
+Restart Apache $ sudo service apache2 restart
 
 
 # References:
